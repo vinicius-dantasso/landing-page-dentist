@@ -6,17 +6,17 @@ function NavBar({ links = [] }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <nav style={{ fontFamily: "'Jost', sans-serif" }} className="sticky top-0 left-0 w-full z-50 bg-white border-b border-[#E8E2D8]">
+      <div className="max-w-6xl mx-auto px-6 md:px-12 flex justify-between items-center h-[68px]">
 
         <img src={Logo} alt="Logo" className="h-16 w-auto object-contain" />
 
-        <ul className="hidden md:flex space-x-6 font-medium">
+        <ul className="hidden md:flex gap-8 list-none">
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-black hover:border-b-2 hover:border-black transition-all duration-200 py-2"
+                className="text-[11px] tracking-[2px] uppercase text-[#4A4640] no-underline font-normal transition-colors duration-200 hover:text-[#B8985A]"
               >
                 {link.label}
               </a>
@@ -35,22 +35,23 @@ function NavBar({ links = [] }) {
 
       {menuOpen && (
         <div className={
-            `md:hidden bg-black/70 backdrop-blur-lg shadow-lg transition-all duration-300 
-            ${menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`
-        }>
-          <ul className="flex flex-col items-center py-4 space-y-3 font-medium">
+          `md:hidden bg-white border-t border-[#E8E2D8] transition-all duration-300 overflow-hidden 
+          ${menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}>
+
+          <ul className="flex flex-col items-center py-4 gap-3 list-none">
             {links.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="text-white hover:text-gray-700 transition-all duration-200 py-2 block"
+                  className="text-[11px] tracking-[2px] uppercase text-[#4A4640] no-underline hover:text-[#B8985A] transition-colors duration-200 py-2 block"
                 >
                   {link.label}
                 </a>
               </li>
             ))}
           </ul>
+
         </div>
       )}
     </nav>

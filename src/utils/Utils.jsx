@@ -1,51 +1,35 @@
 import Placeholder from '../assets/placeholder.png'
 import Restoration from '../assets/Restoration.png'
+import RemovableProsthesis from '../assets/Removable_Prosthesis.jpeg'
+import Lens from '../assets/Lens.png'
+import FixedProsthesis from '../assets/Fixed_Prosthesis.png'
+import Facets from '../assets/Facets.png'
+import Implants from '../assets/Implants.png'
 
 const treatments = [
         {
             name: "Lentes de Contatos Dentais",
-            image: Placeholder,
-            description:"Descrição"
+            image: Lens
         },
         {
             name: "Próteses Fixas",
-            image: Placeholder,
-            description:"Descrição"
+            image: FixedProsthesis
         },
         {
             name: "Facetas em Resina",
-            image: Placeholder,
-            description:"Descrição"
+            image: Facets
         },
         {
-            name: "Clareamentos Dentais",
-            image: Placeholder,
-            description:"Descrição"
+            name: "Implantes",
+            image: Implants
         },
         {
             name: "Restaurações",
-            image: Restoration,
-            description:"Descrição"
-        },
-        {
-            name: "Profilaxias",
-            image: Placeholder,
-            description:"Descrição"
-        },
-        {
-            name: "Exodontias",
-            image: Placeholder,
-            description:"Descrição"
-        },
-        {
-            name: "Gengivectomias",
-            image: Placeholder,
-            description:"Descrição"
+            image: Restoration
         },
         {
             name: "Próteses Removíveis",
-            image: Placeholder,
-            description:"Descrição"
+            image: RemovableProsthesis
         }
     ]
 

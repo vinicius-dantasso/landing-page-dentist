@@ -23,11 +23,18 @@ function Treatments() {
     };
 
     return (
-        <section id="treatments" className="py-16 px-6 md:px-12 bg-gray-50">
+        <section id="treatments" className="py-14 px-6 md:px-12 bg-white">
 
-            <div className="max-w-6xl mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Tratamentos</h2>
+            <div className="text-center mb-12">
+                <div className="flex items-center gap-[18px] mb-[14px]">
+                    <div className="flex-1 h-px bg-[#E8E2D8]"></div>
+                    <h2
+                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                        className="text-[30px] text-[#B8985A] font-light"
+                    >
+                        Tratamentos
+                    </h2>
+                    <div className="flex-1 h-px bg-[#E8E2D8]"></div>
                 </div>
             </div>
 
@@ -37,17 +44,23 @@ function Treatments() {
                         <div key={index} className="px-4 focus:outline-none">
                             <div className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-xl">
 
-                                <div className="w-full h-80 md:h-[450px] flex items-center justify-center bg-black/70">
+                                <div className="w-full h-80 md:h-[450px] flex items-center justify-center bg-[#1A1814]">
                                     <img src={treatment.image} alt={treatment.name} className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105" />
                                 </div>
 
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
 
-                                <div className="absolute bottom-0 left-0 w-full p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-10px]">
-                                    <h3 className="text-2xl md:text-3xl font-bold mb-2">
+                                <div className="absolute bottom-0 left-0 w-full p-6 text-white transform transition-transform duration-500 group-hover:-translate-y-2">
+                                    <h3
+                                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                                        className="text-2xl md:text-3xl font-light mb-2"
+                                    >
                                         {treatment.name}
                                     </h3>
-                                    <p className="text-gray-200 text-lg opacity-0 transform translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                                    <p
+                                        style={{ fontFamily: "'Jost', sans-serif" }}
+                                        className="text-[13px] text-gray-200 font-light opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0"
+                                    >
                                         {treatment.description}
                                     </p>
                                 </div>
