@@ -2,7 +2,7 @@ import { Instagram, MapPin, MessageCircle } from "lucide-react"
 
 function Contact() {
     return (
-        <section id="contact" className="py-14 px-6 md:px-12 bg-white">
+        <section id="contact" className="py-14 px-6 md:px-12 bg-[#FAF8F4]">
             <div className="max-w-5xl mx-auto px-4 text-center">
                 
                 <div className="max-w-6xl mx-auto text-center">

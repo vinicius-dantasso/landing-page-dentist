@@ -36,6 +36,7 @@ const treatments = [
     const links = [
         { label: "Sobre Mim", href: "#about" },
         { label: "Tratamentos", href: "#treatments" },
+        { label: "Consultório", href: "#clinic" },
         { label: "Localização", href: "#location" },
         { label: "Contato", href: "#contact" }
     ]

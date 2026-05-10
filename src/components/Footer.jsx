@@ -14,7 +14,7 @@ function Footer() {
                 style={{ fontFamily: "'Jost', sans-serif" }}
                 className="text-[10px] text-white/30 tracking-[1px]"
             >
-                © {new Date().getFullYear()} · CRO-PB · João Pessoa, Paraíba
+                © {new Date().getFullYear()} · CRO-PB 6125 · João Pessoa, Paraíba
             </div>
 
             <div className="flex gap-[10px]">

@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar.jsx'
 import About from '../components/About.jsx'
 import Treatments from '../components/Treatments.jsx'
+import Clinic from '../components/Clinic.jsx'
 import Local from '../components/Local.jsx'
 import Contact from '../components/Contact.jsx'
 import Footer from '../components/Footer.jsx'
@@ -14,6 +15,7 @@ function Home () {
                 <main>
                     <About />
                     <Treatments />
+                    <Clinic />
                     <Local />
                     <Contact />
                     <Footer />

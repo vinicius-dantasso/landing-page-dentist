@@ -31,8 +31,17 @@ function About() {
                     style={{ fontFamily: "'Jost', sans-serif" }}
                     className="text-[13px] text-white/60 leading-[1.85] mb-8 font-light"
                 >
-                    Sou cirurgiã-dentista especialista em reabilitação oral, com foco em implantes e próteses dentárias. Minha missão é oferecer tratamentos de alta complexidade com segurança, precisão e um cuidado profundamente humano — porque cada sorriso conta uma história.
+                    Sou cirurgiã-dentista especialista em reabilitação oral, 
+                    com foco em implantes e próteses dentárias. 
+                    Minha missão é oferecer tratamentos de alta complexidade com segurança, precisão e um cuidado profundamente humano — porque cada sorriso conta uma história.
                 </p>
+
+                <p
+                    style={{ fontFamily: "'Jost', sans-serif" }}
+                    className='uppercase text-[#B8985A]'
+                >
+                    CRO-PB 6125
+                </p><br/>
 
                 {/* Credenciais */}
                 <div className="flex flex-col gap-3">

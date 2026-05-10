@@ -1,7 +1,7 @@
 
 function Local() {
     return (
-        <section id='location' className="py-14 bg-[#FAF8F4]">
+        <section id='location' className="py-14 bg-white">
 
             <div className="px-6 md:px-12 text-center mb-8">
                 <div className="flex items-center gap-[18px] mb-10">
